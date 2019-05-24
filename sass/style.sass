@@ -1,0 +1,227 @@
+
+*
+    margin: 0
+    padding: 0
+
+@font-face
+    font-family: "OpenSans Bold"
+    src: url("../fonts/OpenSans-Bold.ttf")
+
+
+$main_font: "OpenSans Bold"
+$menu-color: #1f2229
+
+=bold-text()
+    font-family: $main_font
+
+input[type="submit"]
+    outline: none
+    position: absolute
+    left: 5%
+    width: 150px
+    height: 40px
+    background-color: green
+    color: #fff
+    border: none
+    border-radius: 4px
+    padding: 0
+    +bold-text
+    margin-top: 230px
+    margin-left: 0
+    background: linear-gradient(#a2c500,#83b200), #a2c500
+    &:active
+        background: linear-gradient(#83b200,#a2c500), #83b200
+        
+.page
+    font-size: 14px
+    font-family: Arial, sans-serif
+    position: relative
+    background-color: #101114
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-content: center
+    &__content
+        display: flex
+        position: relative
+        padding: 5% 5%
+    &__menu
+        +bold-text
+        width: 30% 
+        &__logo
+            background-color: $menu-color
+            display: flex
+            align-items: center
+            padding: 0 0 0 10%
+            height: 120px
+        &__button
+            display: none
+        &__list
+            list-style: none
+            &-close
+                display: none
+                font-size: 50px
+                color: #fff
+                padding-top: 25px
+                padding-right: 10%
+                text-align: right
+                width: 100%
+                height: 120px
+                background-color: $menu-color
+            li 
+                &:nth-child(4),&:nth-child(5)
+                    a
+                        color: #808592  
+            a
+                background-color: $menu-color
+                border-top: 1px solid #22252d
+                padding: 20px 10%
+                display: block
+                text-decoration: none
+                color: #fff
+                &:hover
+                    background-color: #191c24
+            .active
+                background-color: #2a2d37
+                &:hover
+                    background-color: #2a2d37
+                    
+    $bt_text-color: #193945  
+    $bm_bg-color: #f7f8f8
+    $bm_text-color: #8494ab
+    $other_bg: #373c43
+
+    &__body
+        width: 70%
+        &__title
+            background-color: #00aeef
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-content: center
+            height: 120px
+            color: $bt_text-color
+            
+            *
+                padding: 0 0 0 5%
+                
+            span 
+                width: 80%
+        &__main
+            padding-top: 40px
+            background-color: $bm_bg-color
+            *
+                padding: 10px 0 0 5%
+                color: $bm_text-color
+
+            p 
+                font-size: 17px
+                padding: 10px 0 10px 5% 
+                span 
+                    color: #2a2d37
+                    font-size: 17px
+                    padding-left: 10px
+            h2 
+                +bold-text
+                font-size: 24px
+                color: #383d43
+
+            &__cards
+                position: relative
+                width: 100%
+                height: 350px
+                margin-top: 20px
+                
+
+            &__card1, &__card2
+                background-color: $bm_bg-color
+                width: 320px
+                border: 1px solid #e4e9ee
+                border-radius: 10px
+                height: 200px
+                p
+                    padding: 10px 0 0 0px
+                    margin: 0
+                    
+
+                *
+                    margin-top: 10px
+
+            &__card1
+                position: absolute
+                z-index: 2
+                padding: 0px 0px 7px 15px
+                top: 0
+                left: 50px
+                input
+                    outline: none
+                    text-align: center
+                    height: 35px
+                    padding: 0
+                    width: 50px
+                    font-size: 20px
+                    margin-right: 5px
+                    border: 1px solid #e4e9ee
+                input:last-child
+                    text-align: left
+                    width: 90%
+                    font-size: 14px
+                    padding-left: 10px
+                &__pl::-webkit-input-placeholder
+                    color: #bec6cf
+                &__pl:-moz-placeholder
+                    color: #bec6cf
+                &__pl::-moz-placeholder 
+                    color: #bec6cf
+                &__pl:-ms-input-placeholder
+                    color: #bec6cf
+                select 
+                    text-align: center
+                    padding: 10px 25px 10px 10px
+                    margin-right: 7px
+                    color: #373c43
+                    border: 1px solid #e4e9ee
+                    background: url('../img/down-arrow.png') no-repeat 90%
+                    outline: none
+                    background-color: #fff
+                    appearance: none
+                
+
+            &__card2
+                position: absolute
+                z-index: 1
+                top: 20px
+                left: 300px
+                transform: translateX(-20%)
+                text-align: right
+                p 
+                    padding-right: 20px
+                &-line 
+                    display: block
+                    width: 95%
+                    height: 30px
+                    background-color: #e4e9ee
+                &-img 
+                    display: block
+                    position: absolute
+                    right: 20px
+                    top: 85px
+                    
+                input
+                    outline: none
+                    width: 120px
+                    font-size: 24px
+                    right: 0
+                    border: 1px solid #e4e9ee
+                    margin-right: 10px
+                    height: 25px
+                
+        &__other
+            background-color: $other_bg
+            font-family: Arial
+            padding: 40px 50px 40px 40px
+            color: #7f8591
+            font-size: 12px
+    
+@import 'media'

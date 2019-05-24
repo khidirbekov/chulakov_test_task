@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>chulakov test task</title>
+</head>
+<body>
+    <!-- Блок страницы -->
+    <div class="page">
+        <!-- Блок с контентом -->
+        <div class="page__content">
+            <!-- Блок меню и лого -->
+            <div class="page__menu">
+                <!-- Блок лого -->
+                <div class="page__menu__logo">
+                    <img src="img/logo.png" alt="chulakov.ru">
+                    <img src="img/menu-icon.png" width="30" alt="" class="page__menu__button">
+                </div>
+                <!-- /.page__menu__logo -->
+
+                <!-- Блок меню -->
+                <ul class="page__menu__list">
+                    <div class="page__menu__list-close">&times;</div>
+                    <li>
+                        <a href="#">Первая ссылка</a>
+                    </li>
+                    <li>
+                        <a href="#" class="active">Вторая ссылка(активная)</a>
+                    </li>
+                    <li>
+                        <a href="#">Третья ссылка</a>
+                    </li>
+                    <li>
+                        <a href="#">Личный кабинет</a>
+                    </li>
+                    <li>
+                        <a href="#">Выйти</a>
+                    </li>
+                </ul>
+                <!-- /.page__menu__list -->
+
+            </div>
+            <!-- /.page__menu -->
+
+            <!-- Блок с основынм контентом -->
+            <div class="page__body">
+                <!-- Блок с заголовком -->
+                <div class="page__body__title">
+                    <h1>Заголовок страницы</h1>
+                    <span>
+                        В отличие от пылевого и ионного хвостов, направление поступает в лимногляциальный часовой угол
+                    </span>
+                </div>
+                <!-- /.page__body__title -->
+
+                <!-- Блок с телом основного контента -->
+                <div class="page__body__main">
+                    <p>Информация по оплате: </p>
+                    <p id="num">Номер счета: <span>{{ number }}</span>
+                        <br>
+                        Сумма платежа: <span>{{ sum }}</span>
+                    </p>
+                    <h2>Данные банковской карты</h2>
+                    <!-- Блок с карточками и формами -->
+                    <div class="page__body__main__cards">
+                        <form action="" onsubmit="return validate();">
+                            <div class="page__body__main__card1">
+                                <p>Номер карты</p>
+                                <input type="text" maxlength="4" name="n1" id="n1">
+                                <input type="text" maxlength="4" name="n2" id="n2">
+                                <input type="text" maxlength="4" name="n3" id="n3">
+                                <input type="text" maxlength="4" name="n4" id="n4">
+                                <p>Срок действия</p>
+                                
+                                <select name="month" id="">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option selected value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>      
+                                </select>
+                                <select name="year" id="">
+                                    <option selected value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>   
+                                </select>
+                                <br>
+                                <input type="text" placeholder="Держатель карты" class="page__body__main__card1__pl" name="user" id="user">
+                            </div>
+                            <div class="page__body__main__card2">
+                                <div class="page__body__main__card2-line"></div>
+                                <p>Код CVV2 / CVC2</p>
+                                <input type="text" maxlength="3" name="cvv" id="cvv">
+                                <img class="page__body__main__card2-img" src="img/ask.png" alt"ask" title="Здесь подсказка">
+                            </div>
+                            <input type="submit" value="Оплатить">
+                        </form>
+                    </div>
+                    <!-- /.page__body__cards -->
+                </div>
+                <!-- /.page__body__main -->
+
+                <!-- Последний блок с доп. информацией -->
+                <div class="page__body__other">
+                    <span>
+                           <p>Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского бассейна,
+                             которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. Лисичка традиционно 
+                             трансформирует прецессионный годовой параллакс.</p>
+                            <br>
+                            <p>Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.</p>
+                            <br>
+                            <p>Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.</p>
+                            <br>
+                            <p>Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. 
+                            Проекция вертикально дает уходящий диабаз. 
+                            Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, 
+                            что обусловлено не только первичными неровностями эрозионно-тектонического рельефа поверхности 
+                            кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет 
+                            иначе взглянуть на то, что такое волчок.</p>
+                    </span>
+                </div>
+                <!-- /.page__body__other -->
+            </div>
+            <!-- /.page__body -->
+        </div>
+        <!-- /.page__content -->
+    </div>
+    <!-- /.page -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            /* При клике на кнопку с полосками откроется меню */
+            $('.page__menu__button').click(function(event){
+                $('.page__menu__list-close').fadeIn(); // fadeIn() чтобы открывать с анимацией
+                $('.page__menu__list').fadeIn();
+            });
+            
+            /* При клике на крестик меню скроется */
+             $('.page__menu__list-close').click(function(event){
+                $('.page__menu__list').fadeOut();
+            });
+            
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script>
+        var app = new Vue({
+            el: "#num",
+            data: {
+                number: "87123658716587",
+                sum: "100 руб."
+            }
+        });
+        
+        function validate()
+        {
+            // инициализириуем переменные с данными из полей формы
+            var n1 = document.getElementById("n1");
+            var n2 = document.getElementById("n2");
+            var n3 = document.getElementById("n3");
+            var n4 = document.getElementById("n4");
+            
+            var user = document.getElementById("user");
+
+            var cvv = document.getElementById("cvv");
+            
+            // инициализируем булевские переменные с условиями
+            // в этих полях длина должна быть равна 4 и все символы - цифры
+            var bn1 = n1.value.length != 4 || (! /^[0-9]+$/.test(n1.value)) 
+            var bn2 = n2.value.length != 4 || (! /^[0-9]+$/.test(n2.value)) 
+            var bn3 = n3.value.length != 4 || (! /^[0-9]+$/.test(n3.value))
+            var bn4 = n4.value.length != 4 || (! /^[0-9]+$/.test(n4.value))
+            
+            // в этом поле длина должна быть не меньше 4 и все символы - латинские буквы
+            var buser = user.value.length < 4 || (! /^[a-zA-Z]+$/.test(user.value))
+
+            // в этих полях длина должна быть равна 3 и все символы - цифры
+            var bcvv = cvv.value.length != 3 || (! /^[0-9]+$/.test(cvv.value))
+
+            // проверка условия, если в каком-то поле некорректные данные, то возвращаем false и форма не отправит данные
+            if(bn1 || bn2 || bn3 || bn4 || buser || bcvv) {
+                if(bn1){
+                    n1.style.border = "1px solid red";
+                }else{
+                    n1.style.border = "1px solid #e4e9ee";
+                 }
+
+                if(bn2){
+                    n2.style.border = "1px solid red";
+                }else{
+                    n2.style.border = "1px solid #e4e9ee";
+                }
+
+                if(bn3){
+                    n3.style.border = "1px solid red";
+               
+                }else{
+                    n3.style.border = "1px solid #e4e9ee";
+                }
+
+                if(bn4){
+                    n4.style.border = "1px solid red";
+                
+                }else{
+                    n4.style.border = "1px solid #e4e9ee";
+                }
+
+                if(buser){
+                    user.style.border = "1px solid red";
+               
+                }else{
+                    user.style.border = "1px solid #e4e9ee";
+                }
+
+                if(bcvv){
+                    cvv.style.border = "1px solid red";
+            
+                }else{
+                    cvv.style.border = "1px solid #e4e9ee";
+                }
+
+                // условия сверху обводят поля красным, которые имеют некорректные данные
+                
+                return false;
+            }
+            else 
+                // если все корректно, то отправляем данные
+                return true;
+        }
+    
+  </script>
+</body>
+</html>

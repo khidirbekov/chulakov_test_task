@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "OpenSans Bold";
+  src: url("../fonts/OpenSans-Bold.ttf");
+}
+
+input[type="submit"] {
+  outline: none;
+  position: absolute;
+  left: 5%;
+  width: 150px;
+  height: 40px;
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0;
+  font-family: "OpenSans Bold";
+  margin-top: 230px;
+  margin-left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a2c500), to(#83b200)), #a2c500;
+  background: linear-gradient(#a2c500, #83b200), #a2c500;
+}
+
+input[type="submit"]:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#83b200), to(#a2c500)), #83b200;
+  background: linear-gradient(#83b200, #a2c500), #83b200;
+}
+
+.page {
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  position: relative;
+  background-color: #101114;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.page__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 5% 5%;
+}
+
+.page__menu {
+  font-family: "OpenSans Bold";
+  width: 30%;
+}
+
+.page__menu__logo {
+  background-color: #1f2229;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 0 10%;
+  height: 120px;
+}
+
+.page__menu__button {
+  display: none;
+}
+
+.page__menu__list {
+  list-style: none;
+}
+
+.page__menu__list-close {
+  display: none;
+  font-size: 50px;
+  color: #fff;
+  padding-top: 25px;
+  padding-right: 10%;
+  text-align: right;
+  width: 100%;
+  height: 120px;
+  background-color: #1f2229;
+}
+
+.page__menu__list li:nth-child(4) a, .page__menu__list li:nth-child(5) a {
+  color: #808592;
+}
+
+.page__menu__list a {
+  background-color: #1f2229;
+  border-top: 1px solid #22252d;
+  padding: 20px 10%;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.page__menu__list a:hover {
+  background-color: #191c24;
+}
+
+.page__menu__list .active {
+  background-color: #2a2d37;
+}
+
+.page__menu__list .active:hover {
+  background-color: #2a2d37;
+}
+
+.page__body {
+  width: 70%;
+}
+
+.page__body__title {
+  background-color: #00aeef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 120px;
+  color: #193945;
+}
+
+.page__body__title * {
+  padding: 0 0 0 5%;
+}
+
+.page__body__title span {
+  width: 80%;
+}
+
+.page__body__main {
+  padding-top: 40px;
+  background-color: #f7f8f8;
+}
+
+.page__body__main * {
+  padding: 10px 0 0 5%;
+  color: #8494ab;
+}
+
+.page__body__main p {
+  font-size: 17px;
+  padding: 10px 0 10px 5%;
+}
+
+.page__body__main p span {
+  color: #2a2d37;
+  font-size: 17px;
+  padding-left: 10px;
+}
+
+.page__body__main h2 {
+  font-family: "OpenSans Bold";
+  font-size: 24px;
+  color: #383d43;
+}
+
+.page__body__main__cards {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  margin-top: 20px;
+}
+
+.page__body__main__card1, .page__body__main__card2 {
+  background-color: #f7f8f8;
+  width: 320px;
+  border: 1px solid #e4e9ee;
+  border-radius: 10px;
+  height: 200px;
+}
+
+.page__body__main__card1 p, .page__body__main__card2 p {
+  padding: 10px 0 0 0px;
+  margin: 0;
+}
+
+.page__body__main__card1 *, .page__body__main__card2 * {
+  margin-top: 10px;
+}
+
+.page__body__main__card1 {
+  position: absolute;
+  z-index: 2;
+  padding: 0px 0px 7px 15px;
+  top: 0;
+  left: 50px;
+}
+
+.page__body__main__card1 input {
+  outline: none;
+  text-align: center;
+  height: 35px;
+  padding: 0;
+  width: 50px;
+  font-size: 20px;
+  margin-right: 5px;
+  border: 1px solid #e4e9ee;
+}
+
+.page__body__main__card1 input:last-child {
+  text-align: left;
+  width: 90%;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.page__body__main__card1__pl::-webkit-input-placeholder {
+  color: #bec6cf;
+}
+
+.page__body__main__card1__pl:-moz-placeholder {
+  color: #bec6cf;
+}
+
+.page__body__main__card1__pl::-moz-placeholder {
+  color: #bec6cf;
+}
+
+.page__body__main__card1__pl:-ms-input-placeholder {
+  color: #bec6cf;
+}
+
+.page__body__main__card1 select {
+  text-align: center;
+  padding: 10px 25px 10px 10px;
+  margin-right: 7px;
+  color: #373c43;
+  border: 1px solid #e4e9ee;
+  background: url("../img/down-arrow.png") no-repeat 90%;
+  outline: none;
+  background-color: #fff;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.page__body__main__card2 {
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: 300px;
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+  text-align: right;
+}
+
+.page__body__main__card2 p {
+  padding-right: 20px;
+}
+
+.page__body__main__card2-line {
+  display: block;
+  width: 95%;
+  height: 30px;
+  background-color: #e4e9ee;
+}
+
+.page__body__main__card2-img {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 85px;
+}
+
+.page__body__main__card2 input {
+  outline: none;
+  width: 120px;
+  font-size: 24px;
+  right: 0;
+  border: 1px solid #e4e9ee;
+  margin-right: 10px;
+  height: 25px;
+}
+
+.page__body__other {
+  background-color: #373c43;
+  font-family: Arial;
+  padding: 40px 50px 40px 40px;
+  color: #7f8591;
+  font-size: 12px;
+}
+
+@media (max-width: 1000px) {
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .page__content {
+    padding: 0;
+  }
+  .page__body__main__card1 {
+    left: 30px;
+  }
+  .page__body__main__card2 {
+    left: 270px;
+  }
+  .page__body__main__card2 input {
+    height: 37px;
+  }
+  .page__body__main__card2-line {
+    width: 100%;
+    height: 40px;
+  }
+  .page__body__main__card1, .page__body__main__card2 {
+    width: 320px;
+    height: 205px;
+  }
+}
+
+@media (max-width: 768px) {
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .page__content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .page__menu {
+    width: 100%;
+    position: inherit;
+    display: block;
+  }
+  .page__menu__button {
+    display: block;
+    position: absolute;
+    right: 10%;
+  }
+  .page__menu__list {
+    position: absolute;
+    width: 100%;
+    display: none;
+    top: 0;
+    z-index: 30;
+  }
+  .page__body {
+    width: 100%;
+  }
+  .page__body__main p {
+    font-size: 15px;
+  }
+  .page__body__main__card1, .page__body__main__card2 {
+    width: 280px;
+    height: 180px;
+    padding: 0;
+  }
+  .page__body__main__card1 {
+    padding: 0px 0px 7px 15px;
+  }
+  .page__body__main__card1 input {
+    height: 30px;
+    width: 45px;
+    font-size: 20px;
+  }
+  .page__body__main__card1 input:last-child {
+    font-size: 14px;
+  }
+  .page__body__main__card1 select {
+    padding: 5px 19px 5px 5px;
+  }
+  .page__body__main__card2 {
+    -webkit-transform: translateX(-30%);
+            transform: translateX(-30%);
+  }
+  .page__body__main__card2 input {
+    position: relative;
+    width: 100px;
+    font-size: 15px;
+    height: 30px;
+  }
+  .page__body__main__card2-img {
+    right: 20px;
+    top: 67px;
+    width: 35px;
+  }
+  .page__body__main__card2-line {
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page__body__main__cards {
+    height: 550px;
+  }
+  .page__body__main__card2 {
+    -webkit-transform: translateX(-85%);
+            transform: translateX(-85%);
+    top: 186px;
+  }
+  .page__body__main input[type="submit"] {
+    left: 7%;
+    margin-top: 351px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
